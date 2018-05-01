@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+        <title>Hvala na poseti!</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+  <body>
+    <div class="container jumbotron text-center">
+      <h1>Hvala na poseti, vratite nam se uskoro!</h1>
+      </div>
+    <div class="container   btn-group-vertical">
+
+      <a class="btn btn-primary btn-lg btn-danger" href="https://www.facebook.com/Pred%C5%A1kolska-ustanova-Beli-Dvorac-149067775495339/" role="button">Facebook</a>
+      <a class="btn btn-primary btn-lg btn-danger" href="http://belidvorac.rs/" role="button">Web stranica</a>
+      <a class="btn btn-primary btn-lg btn-danger" href="{% url 'accounts:login' %}" role="button">Ulogujte se</a>
+
+
+    </div>
+  </body>
+</html>
